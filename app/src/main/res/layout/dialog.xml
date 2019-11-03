@@ -155,15 +155,10 @@
             <GridView
                 android:layout_weight="1"
                 android:id="@+id/gv"
-                android:numColumns="2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <GridView
-                android:layout_weight="1"
-                android:id="@+id/gv2"
                 android:numColumns="3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
 
 

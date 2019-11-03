@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText authorname = dialog.findViewById(R.id.edtNameA);
 
         final  GridView gridView = dialog.findViewById(R.id.gv);
-        final  GridView gridView2 = dialog.findViewById(R.id.gv2);
+
 
         final Button btnselect = dialog.findViewById(R.id.btnSelect);
         final Button btnupdate = dialog.findViewById(R.id.btnUpdate);
@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         for(Author a : authorArrayList){
             list.add(a.getIda() + "");
             list.add(a.getNamea());
+           list.add(a.getIda()+"");
         }
         ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, list);
         gridView.setAdapter(adapter);
