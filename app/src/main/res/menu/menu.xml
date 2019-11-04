@@ -5,4 +5,9 @@
         android:id="@+id/ttsach"
         >
     </item>
+    <item
+        android:title="Thông tin tác giả"
+        android:id="@+id/tttg"
+        >
+    </item>
 </menu>

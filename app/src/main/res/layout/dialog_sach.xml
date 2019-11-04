@@ -15,7 +15,7 @@
             android:layout_marginRight="15dp"
             android:layout_gravity="right"
             android:text="Exit"
-            android:id="@+id/btnexit"
+            android:id="@+id/btnexitS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -32,17 +32,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:text="ID author:">
+                android:text="ID Sach:">
 
             </TextView>
 
             <EditText
-                android:id="@+id/edtIDA"
+                android:id="@+id/edtIDS"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:inputType="numberSigned"
-               >
+                >
 
             </EditText>
         </LinearLayout>
@@ -55,15 +55,34 @@
                 android:layout_weight="2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Author name:">
+                android:text="Title:">
 
             </TextView>
+
             <EditText
-                android:layout_weight="1"
+                android:id="@+id/edtTitle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/edtNameA">
-            </EditText>
+                android:layout_height="match_parent"
+                android:layout_weight="1"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ID author:">
+
+            </TextView>
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/spi_bAuthorId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
         </LinearLayout>
 
 
@@ -74,17 +93,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <Button
-                android:layout_weight="1"
-                android:id="@+id/btnSelect"
+                android:id="@+id/btnSelectS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="Select"
-                />
+                android:layout_weight="1"
+                android:text="Select" />
             <Button
                 android:layout_weight="1"
-                android:id="@+id/btnSave"
+                android:id="@+id/btnSaveS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -92,7 +111,7 @@
                 />
             <Button
                 android:layout_weight="1"
-                android:id="@+id/btnUpdate"
+                android:id="@+id/btnUpdateS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -101,7 +120,7 @@
             <Button
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
-                android:id="@+id/btnDelete"
+                android:id="@+id/btnDeleteS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -112,12 +131,13 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <GridView
-                android:layout_weight="1"
-                android:id="@+id/gv"
-                android:numColumns="2"
+                android:id="@+id/gvS"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numColumns="3" />
 
         </LinearLayout>
 
